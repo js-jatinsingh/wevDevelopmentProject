@@ -1,0 +1,130 @@
+/* Blog Styling */
+.blog-container {
+   width: 85%; /* Adjust width to make it smaller */
+   max-width: 700px; /* Set a maximum width for better layout */
+   margin: 4rem auto 2rem auto; /* Add margin-top for space from the header */
+   padding: 1rem; /* Maintain some padding */
+   background-color: #fff; /* Ensure background is white for shadow effect */
+   border-radius: 8px; /* Optional: Rounded corners */
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Light shadow effect */
+}
+
+/* Individual Blog Post Styling */
+.blog-post {
+   background-color: #fff;
+   padding: 1rem;
+   margin-bottom: 2rem; /* Add spacing between each post */
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+.blog-post h2 {
+   font-size: 1.5rem;
+   color: #444;
+}
+
+.post-date {
+   font-size: 0.9rem;
+   color: #777;
+}
+
+.post-image {
+   width: 100%; /* Use full width of the blog post container */
+   border-radius: 8px;
+   margin: 1rem 0;
+}
+
+.post-content {
+   font-size: 1rem;
+   line-height: 1.4;
+   color: #555;
+}
+
+.read-more {
+   background-color: #5cb85c;
+   color: white;
+   border: none;
+   padding: 0.5rem 1rem;
+   margin-top: 8px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.read-more:hover {
+   background-color: #4cae4c;
+}
+
+/* Comments Section Styling */
+.comments-section {
+   margin-top: 1.5rem;
+}
+
+.comments-section h3 {
+   font-size: 1.3rem;
+   color: #444;
+   margin-bottom: 1rem;
+}
+
+/* Comment Form */
+#comment-form {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   margin-bottom: 1rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+   padding: 0.8rem;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   outline: none;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.comment-form textarea {
+   resize: vertical; /* Allow only vertical resizing */
+}
+
+.comment-form button {
+   padding: 0.8rem;
+   margin: 8px 0;
+   background-color: #5cb85c;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+#comment-form button:hover {
+   background-color: #4cae4c;
+}
+
+/* Comments List */
+.comments-list {
+   border-top: 1px solid #ddd;
+   padding-top: 1rem;
+}
+
+.comment {
+   margin-bottom: 1rem;
+}
+
+.comment .username {
+   font-weight: bold;
+   color: #444;
+}
+
+.comment .comment-text {
+   margin: 0.2rem 0;
+   color: #555;
+}
+
+.comment .comment-date {
+   font-size: 0.8rem;
+   color: #777;
+}

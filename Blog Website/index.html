@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travel Blog</title>
+   <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+   <!-- Header Section -->
+   <header class="header">
+      <div class="logo">
+         <a href="index.html"> Travel Blog</a>
+        
+      </div>
+      <!-- Hamburger button -->
+      <button class="hamburger" onclick="toggleNavbar()">☰</button>
+      <!-- Navbar links and search bar -->
+      <nav class="navbar">
+         <div class="nav-links">
+            <a href="blog.html">Blog</a>
+            <a href="destinations.html">Destinations</a>
+         </div>
+         <input type="text" placeholder="Search by location" class="search-bar">
+      </nav>
+   </header>
+   
+
+   <!-- Parallax Section -->
+   <section class="parallax parallax-image1">
+      <div class="overlay">
+         <h1>Explore the World</h1>
+         <p>Discover beautiful destinations and adventures.</p>
+      </div>
+   </section>
+
+      <!-- Featured Blogs Section -->
+      <section class="featured-blogs">
+         <h2>Featured Blogs</h2>
+         <div class="blogs-grid">
+            <!-- Blog 1 -->
+            <div class="blog-item">
+               <img src="images/destination1.jpg" alt="Blog 1">
+               <h3>Exploring the Alps</h3>
+               <p>Discover the stunning landscapes and adventure opportunities in the Alps.</p>
+               <button class="read-more">Read More</button>
+            </div>
+            <!-- Blog 2 -->
+            <div class="blog-item">
+               <img src="images/destination2.jpg" alt="Blog 2">
+               <h3>Safari in Kenya</h3>
+               <p>Experience the wild beauty of Kenya's safaris and diverse wildlife.</p>
+               <button class="read-more">Read More</button>
+            </div>
+            <!-- Blog 3 -->
+            <div class="blog-item">
+               <img src="images/destination4.jpg" alt="Blog 3">
+               <h3>Beaches of Bali</h3>
+               <p>Relax and rejuvenate on the serene beaches of Bali.</p>
+               <button class="read-more">Read More</button>
+            </div>
+            <!-- Blog 4 -->
+            <div class="blog-item">
+               <img src="images/destination5.jpg" alt="Blog 4">
+               <h3>Ancient Temples of Kyoto</h3>
+               <p>Explore the rich history and culture of Kyoto's ancient temples.</p>
+               <button class="read-more">Read More</button>
+            </div>
+         </div>
+      </section>
+   
+
+   <!-- Footer Section -->
+   <footer class="footer">
+      <div class="footer-content">
+         <p>© 2024 Travel Blog | All Rights Reserved</p>
+         <p>Follow us on:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+         </p>
+      </div>
+   </footer>
+
+   <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+ }
+ 
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+ }
+ 
+ .header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+   
+ }
+ 
+ .navbar a, .search-bar {
+    color: white;
+    margin-left: 1em;
+    text-decoration: none;
+ }
+ 
+ .navbar input.search-bar {
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+ }
+ 
+ /* Map Container */
+ .map-container {
+    text-align: center;
+    padding: 2em;
+    margin: 50px 50px;
+ }
+ 
+ .map-container h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+ }
+ 
+ /* Map Styling */
+ #map {
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* Footer Styling */
+ .footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+ }
+ 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travel Blog - Blog Posts</title>
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+   <!-- Header Section -->
+   <header class="header">
+      <div class="logo">
+         <a href="index.html">Travel Blog</a>
+      </div>
+      <button class="hamburger" onclick="toggleNavbar()">☰</button>
+      <nav class="navbar">
+         <div class="nav-links">
+            <a href="blog.html">Blog</a>
+            <a href="destinations.html">Destinations</a>
+         </div>
+         <input type="text" placeholder="Search by location" class="search-bar">
+      </nav>
+   </header>
+
+   <!-- Blog Posts Section -->
+   <div class="blog-container">
+      <!-- Blog Post 1 -->
+      <article class="blog-post" data-post-id="1">
+         <h2>Exploring the Beauty of Kyoto, Japan</h2>
+         <p class="post-date">Published on October 30, 2024</p>
+         <img src="images/destination4.jpg" alt="Beautiful view of Kyoto" class="post-image">
+         <p class="post-content">Kyoto is a city of timeless beauty, filled with cultural heritage, historic temples, and scenic landscapes.</p>
+         <button class="read-more">Read More</button>
+         <section class="comments-section">
+            <h3>Comments</h3>
+            <form class="comment-form">
+               <input type="text" placeholder="Your Name" class="username-input" required>
+               <textarea placeholder="Write a comment..." class="comment-text-input" required></textarea>
+               <button type="submit">Add Comment</button>
+            </form>
+            <div class="comments-list"></div>
+         </section>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-post" data-post-id="2">
+         <h2>Discovering the Charm of Paris, France</h2>
+         <p class="post-date">Published on November 5, 2024</p>
+         <img src="images/destination2.jpg" alt="Beautiful view of Paris" class="post-image">
+         <p class="post-content">Paris, the City of Light, is known for its art, cuisine, and iconic landmarks like the Eiffel Tower and Louvre Museum.</p>
+         <button class="read-more">Read More</button>
+         <section class="comments-section">
+            <h3>Comments</h3>
+            <form class="comment-form">
+               <input type="text" placeholder="Your Name" class="username-input" required>
+               <textarea placeholder="Write a comment..." class="comment-text-input" required></textarea>
+               <button type="submit">Add Comment</button>
+            </form>
+            <div class="comments-list"></div>
+         </section>
+      </article>
+
+      <!-- Add additional blog posts here, following the same structure and incrementing the data-post-id -->
+   </div>
+
+   <!-- Footer Section -->
+   <footer class="footer">
+      <div class="footer-content">
+         <p>© 2024 Travel Blog | All Rights Reserved</p>
+         <p>Follow us on:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+         </p>
+      </div>
+   </footer>
+
+   <script src="scripts/blog.js"></script>
+   <script src="scripts/main.js"></script>
+</body>
+</html>

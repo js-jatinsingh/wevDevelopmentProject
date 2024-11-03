@@ -1,0 +1,292 @@
+/* General reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   color: #333;
+   overflow-x: hidden;
+}
+
+/* Header Section */
+/* General Navbar Styling */
+.logo a {
+   text-decoration: none; /* Removes underline */
+   color:white; /* Sets the color to match previous text */
+   font-size: 1.5rem; /* Adjust font size if necessary */
+   font-weight: bold; /* Makes the text bold */
+   display: inline-block; /* Makes the anchor behave like a block element */
+}
+
+.logo a:hover {
+   color: #5cb85c; /* Change color on hover to match your theme */
+   transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   background-color: rgba(0, 0, 0, 0.6);
+   color: white;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 1000;
+   margin-bottom: 10px;
+}
+
+.logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+}
+
+.nav-links a {
+   margin: 0 1rem;
+   color: white;
+   text-decoration: none;
+   font-size: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+   padding: 0.5rem;
+   border: none;
+   border-radius: 5px;
+   outline: none;
+}
+
+/* Hamburger Button Styling */
+.hamburger {
+   display: none; /* Hidden by default, visible on smaller screens */
+   font-size: 1.5rem;
+   background: none;
+   border: none;
+   color: white;
+   cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+   .nav-links, .search-bar {
+      display: none; /* Hide navbar links and search bar by default on smaller screens */
+   }
+
+   .hamburger {
+      display: block; /* Show hamburger menu icon */
+   }
+
+   .navbar.active .nav-links {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 1rem;
+   }
+
+   .navbar.active .search-bar {
+      display: block;
+      margin: 0.5rem auto;
+      width: 90%;
+   }
+
+   .nav-links a {
+      margin: 0.5rem 0;
+      text-align: center;
+   }
+}
+
+
+/* Parallax Section */
+.parallax {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+}
+
+.parallax-image1 {
+   background-image: url('/images/destination1.jpg');
+}
+
+.overlay {
+   text-align: center;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 5;
+}
+
+.overlay h1 {
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+.overlay p {
+   font-size: 1.2rem;
+}
+
+/* Featured Blogs Section Styling */
+.featured-blogs {
+   position: relative;
+   padding: 2rem 0;
+   background: url('/images/destination3.jpg') center center / cover no-repeat fixed;
+   color: #fff;
+   text-align: center;
+}
+
+.featured-blogs h2 {
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+   color: #fff;
+}
+
+.blogs-grid {
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: 1fr 1fr;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 1rem;
+}
+
+.blog-item {
+   background: rgba(255, 255, 255, 0.8);
+   border-radius: 10px;
+   overflow: hidden;
+   padding: 1rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease;
+}
+
+.blog-item:hover {
+   transform: scale(1.05);
+}
+
+.blog-item img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   margin-bottom: 1rem;
+}
+
+.blog-item h3 {
+   font-size: 1.5rem;
+   color: #333;
+   margin: 0.5rem 0;
+}
+
+.blog-item p {
+   font-size: 1rem;
+   color: #555;
+}
+
+.blog-item .read-more {
+   margin-top: 1rem;
+   background-color: #5cb85c;
+   color: #fff;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.blog-item .read-more:hover {
+   background-color: #4cae4c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .blogs-grid {
+       grid-template-columns: 1fr;
+   }
+}
+
+
+/* Footer Section */
+.footer {
+   background-color: #222;
+   color: white;
+   padding: 2rem 0; /* Increased padding for a taller footer */
+   text-align: center;
+   font-size: 1.1rem;
+   position: relative;
+   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+}
+
+.footer-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 1rem;
+}
+
+.footer-content p {
+   margin: 0.5rem 0;
+}
+
+.footer-content a {
+   color: #ccc;
+   margin: 0 0.5rem;
+   text-decoration: none;
+   transition: color 0.3s;
+}
+
+.footer-content a:hover {
+   color: #fff; /* Lighter color on hover */
+}
+
+.footer-content .social-icons {
+   margin-top: 1rem;
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.footer-content .social-icons a {
+   color: #ccc;
+   font-size: 1.5rem;
+   transition: color 0.3s;
+}
+
+.footer-content .social-icons a:hover {
+   color: #1DA1F2; /* Change color on hover, e.g., for Twitter's color */
+}
+
+.footer-bottom {
+   border-top: 1px solid #444;
+   padding-top: 1rem;
+   font-size: 0.9rem;
+   color: #aaa;
+   margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .footer {
+      font-size: 1rem;
+   }
+   
+   .footer-content .social-icons a {
+      font-size: 1.2rem;
+   }
+}
+
